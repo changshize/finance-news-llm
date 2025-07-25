@@ -2,6 +2,8 @@
 
 A real-time cryptocurrency trading alert system that monitors news sources and uses AI to identify potential arbitrage opportunities and market-moving events.
 
+**🎬 [View Live Demo & Screenshots →](screenshots/)** | **📊 [Interactive Web Demo](screenshots/web_dashboard_demo.html)** | **🖥️ [Console Demo](screenshots/console_demo.md)**
+
 ## 🌟 Features
 
 ### 📡 Real-time News Monitoring
@@ -134,6 +136,12 @@ Access the beautiful real-time dashboard at `http://localhost:8000` after runnin
 ```bash
 python web_dashboard.py
 ```
+
+**📸 [View Live Demo Screenshots →](screenshots/)**
+- **[Interactive HTML Demo](screenshots/web_dashboard_demo.html)** - Open in browser to see actual interface
+- **[Console Output Demo](screenshots/console_demo.md)** - Real system logs and alerts
+- **[System Architecture](screenshots/system_architecture.md)** - Visual diagrams and data flow
+- **[Sample Alert Data](screenshots/sample_alerts.json)** - Real JSON alerts from live system
 
 ## 🏗️ Architecture
 
