@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  crypto-alert-system:
+    build: .
+    container_name: crypto-alerts
+    restart: unless-stopped
+    environment:
+      - PYTHONUNBUFFERED=1
+    env_file:
+      - .env
+    volumes:
+      - ./logs:/app/logs
+      - ./alerts:/app/alerts
+      - ./data:/app/data
+      - ./.env:/app/.env:ro
+    networks:
+      - crypto-network
+    healthcheck:
+      test: ["CMD", "python", "-c", "import sys; sys.exit(0)"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+networks:
+  crypto-network:
+    driver: bridge
